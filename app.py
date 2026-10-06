@@ -157,17 +157,50 @@ def write_metadata(info, folder, clean):
     with open(os.path.join(folder, f"{clean}_metadata.json"), 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+def resource_path(name):
+    """Đường dẫn tới file đi kèm: chạy từ source thì cạnh app.py, chạy bản .exe (PyInstaller) thì trong thư mục giải nén tạm."""
+    base = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base, name)
+
+BUNDLED_FONT_FAMILY = "Be Vietnam Pro"   # font nhúng kèm tool, hỗ trợ đầy đủ tiếng Việt
+FALLBACK_FONT_FAMILY = "Segoe UI"        # có sẵn trên mọi Windows 7+
+
+def load_bundled_fonts():
+    """Nạp font nhúng kèm tool vào tiến trình (không cần cài vào Windows, không cần quyền admin).
+    Nhờ vậy giao diện hiển thị y hệt trên mọi máy, kể cả máy thiếu font."""
+    if os.name != 'nt':
+        return False
+    try:
+        import ctypes
+        FR_PRIVATE = 0x10
+        added = 0
+        for fn in glob.glob(resource_path(os.path.join('fonts', '*.ttf'))):
+            added += ctypes.windll.gdi32.AddFontResourceExW(fn, FR_PRIVATE, 0)
+        return added > 0
+    except Exception as e:
+        log_error(f"load_bundled_fonts: {e}")
+        return False
+
+load_bundled_fonts()
+
 class VideoDownloaderApp(ctk.CTk):
-    FONT = "Georgia"
+    FONT = BUNDLED_FONT_FAMILY
     def __init__(self):
         super().__init__()
+        # Nếu vì lý do nào đó font nhúng không nạp được -> dùng Segoe UI thay vì để Tk tự chọn font lạ
+        try:
+            import tkinter.font as tkfont
+            if BUNDLED_FONT_FAMILY not in tkfont.families(self):
+                self.FONT = FALLBACK_FONT_FAMILY
+        except Exception:
+            self.FONT = FALLBACK_FONT_FAMILY
         self.title("⚡ Pro Video Downloader v2.0 — by VictorChuyen")
         self.geometry("560x780")
         self.minsize(520, 680)
         self.resizable(True, True)
         # Set window icon for titlebar + taskbar
         try:
-            icon_path = os.path.join(os.path.dirname(__file__), "icon.ico")
+            icon_path = resource_path("icon.ico")
             if os.path.exists(icon_path):
                 self.iconbitmap(icon_path)
         except: pass

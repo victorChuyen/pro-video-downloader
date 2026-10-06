@@ -34,6 +34,9 @@ AI-Audio-Studio-LONG AI*
 *.zip
 *.rar
 *.7z
+*.mp4
+*.mkv
+*.avi
 
 # OS generated files
 .DS_Store

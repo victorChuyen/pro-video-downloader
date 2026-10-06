@@ -5,6 +5,7 @@ from PyInstaller.utils.hooks import collect_all
 OPTIONAL_ASSETS = ['coffee.png', 'donate.png', 'real_qr.png', 'icon.ico']
 
 datas = [(f, '.') for f in OPTIONAL_ASSETS if os.path.exists(f)]
+datas += [('fonts', 'fonts')]  # font Be Vietnam Pro nhung kem -> chu hien thi dung tren moi may
 missing = [f for f in OPTIONAL_ASSETS if not os.path.exists(f)]
 if missing:
     print(f"[build] Luu y: khong tim thay {missing} - se build ma khong co cac file nay.")
