@@ -1,0 +1,29 @@
+# Virtual environments
+.venv/
+.venv*/
+env/
+venv/
+
+# Build and distribution artifacts
+build/
+dist/
+dist-installer/
+*.zip
+*.rar
+*.7z
+*.exe
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Local runtime logs & temporary test files
+*.log
+test_short.mp3
+test_verification_long_ai.py
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

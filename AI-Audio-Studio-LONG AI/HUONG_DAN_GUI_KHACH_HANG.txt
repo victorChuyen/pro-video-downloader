@@ -1,0 +1,59 @@
+🎙️ AI AUDIO STUDIO (LONG AI EDITION) — GIỌNG NÓI AI TIẾNG VIỆT CHẠY TRÊN MÁY TÍNH
+Hotline / Zalo hỗ trợ: 0566260837
+========================================================================
+
+Chào bạn! Dưới đây là hướng dẫn cài đặt và sử dụng phần mềm AI Audio Studio — phần mềm đọc văn bản tiếng Việt bằng AI tự nhiên và nhân bản (clone) giọng nói trực tiếp trên máy tính của bạn (không tốn phí duy trì, chạy hoàn toàn trên máy).
+
+------------------------------------------------------------------------
+🌟 ĐIỂM NỔI BẬT:
+- Nâng cấp Long-Text Engine: đọc văn bản dài lên đến 50.000 ký tự (~10.000 từ).
+- Đọc văn bản tiếng Việt cực kỳ tự nhiên, ngắt nghỉ như người thật.
+- Có sẵn hơn 25 giọng đọc mẫu đa dạng vùng miền (Bắc - Trung - Nam).
+- Nhân bản (Clone) giọng nói bất kỳ chỉ từ 3–5 giây ghi âm mẫu.
+- Ghép kịch bản hội thoại đa nhân vật tự động.
+- Chạy 100% bằng CPU, máy tính phổ thông văn phòng dùng mượt mà, không cần card màn hình rời.
+- Dữ liệu lưu trên máy tính của bạn, bảo mật tuyệt đối.
+
+------------------------------------------------------------------------
+📥 HƯỚNG DẪN CÀI ĐẶT (Chỉ 1 phút):
+
+Bước 1: Tải file bộ cài đặt:
+   👉 Tải file: AI-Audio-Studio-Setup-v2.0.exe (khoảng 100 MB).
+
+Bước 2: Cài đặt:
+   - Nhấp đúp vào file "AI-Audio-Studio-Setup-v2.0.exe".
+   - (Nếu Windows hiện thông báo "Windows protected your PC", bạn chỉ cần bấm "More info" ➔ Chọn "Run anyway").
+   - Nhấn "Next" ➔ "Install" ➔ "Finish".
+
+Bước 3: Mở phần mềm:
+   - Ngoài màn hình Desktop sẽ xuất hiện biểu tượng icon "AI Audio Studio".
+   - Bạn chỉ cần nhấp đúp vào icon, trình duyệt web sẽ tự động mở lên giao diện phần mềm để bạn sử dụng ngay!
+
+------------------------------------------------------------------------
+🎯 HƯỚNG DẪN SỬ DỤNG NHANH:
+
+1. Sinh giọng đọc từ văn bản:
+   - Vào tab "Sinh giọng".
+   - Chọn giọng đọc mong muốn (vd: Nam miền Bắc, Nữ miền Nam...).
+   - Dán đoạn văn bản cần đọc vào ô.
+   - Bấm nút "Sinh giọng" (hoặc "Nghe trực tiếp") ➔ Bấm nút Tải về (file .wav) để sử dụng làm video, podcast, tiktok...
+
+2. Nhân bản (Clone) giọng nói của bạn:
+   - Vào tab "Clone giọng".
+   - Tải lên 1 đoạn ghi âm giọng mẫu ngắn từ 3 đến 5 giây (hoặc bấm nút Ghi âm trực tiếp bằng micro).
+   - Nhập tên giọng (vd: "Giọng của tôi").
+   - Bấm "Tạo giọng" ➔ Giọng mới sẽ tự động lưu vào danh sách để bạn tạo giọng bất cứ lúc nào!
+
+------------------------------------------------------------------------
+⚠️ LƯU Ý QUAN TRỌNG:
+- Ở LẦN TẠO GIỌNG ĐẦU TIÊN: Máy tính cần có kết nối mạng Internet để phần mềm tự động nạp mô hình AI tiếng Việt (mất khoảng 1–3 phút tùy tốc độ mạng).
+- TỪ LẦN THỨ HAI TRỞ ĐI: Phần mềm hoạt động hoàn toàn OFFLINE, bạn có thể ngắt mạng mà vẫn tạo giọng bình thường.
+
+------------------------------------------------------------------------
+📞 THÔNG TIN HỖ TRỢ & BẢN QUYỀN:
+- Tùy biến & Đóng gói phát hành: LONG AI
+- Hotline / Zalo hỗ trợ kỹ thuật: 0566260837 (Zalo: https://zalo.me/0566260837)
+- Nguồn gốc dự án: Ghi nhận công lao 2 tác giả gốc:
+  + Đặng Hữu Sơn (Tác giả ứng dụng AI Audio Studio gốc - LovinBot AI)
+  + Phạm Nguyễn Ngọc Bảo (Tác giả mô hình lõi AI VieNeu-TTS)
+========================================================================

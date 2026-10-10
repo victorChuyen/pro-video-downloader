@@ -28,8 +28,7 @@ error.log
 *.key
 cookies.txt
 
-# External / Unrelated tool folders in root workspace
-AI-Audio-Studio-LONG AI*
+# 3. Cut_video_image_merge_image/
 3. Cut_video_image_merge_image/
 *.zip
 *.rar
